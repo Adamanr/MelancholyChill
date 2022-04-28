@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	HandlerRoot "MelancholyChill/server"
+	"github.com/gin-gonic/gin"
+)
+
+var r *gin.Engine
 
 func main() {
-	fmt.Println("Hello")
+	HandlerRoot.Handler(r)
 }

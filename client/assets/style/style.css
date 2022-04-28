@@ -1,0 +1,29 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.headers{
+    height: 50vh;
+    width: 100%;
+    background-color: #85cdca;
+    background-repeat: no-repeat;
+}
+
+body{
+    height:200vh;
+}
+.info img{
+    height:40vh;
+    width: 100%;
+}
+.info_list div {
+    width: 25%;
+    height: 25%;
+    margin:1.5em;
+}
+.news_block img{
+    height: 100%;
+    width: 100vw;
+}

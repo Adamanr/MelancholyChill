@@ -12,8 +12,8 @@
     <header>
         {{ template "header"}}
     </header>
-    <div class="headers ">
-    </div>
+
+    <div class="headers "></div>
     <nav style="background-color: #C38D9E" class="p-1 text-center text-white">Купите только сегодня со скидкой! 👉🏻<a class="text-success text-decoration-none" href="/buy">купить</a>👈🏻</nav>
     <div class="info">
         <h1 class="display-5 mt-4 text-center">Проводите время вместе с нашими плейлистами!</h1>
@@ -54,5 +54,23 @@
             <p class="fs-2">Новый сайт с кучей музыки и кучей разного контента только что открылся! Успевай забрать всё нужное к себе в библиотеку!</p>
         </div>
     </div>
+    <div class="form_info container w-75 border border-black mt-5 p-5 pt-1">
+        <h1 class="display-2 text-white fw-bold text-center mb-5">Стартуем!</h1>
+        <div class="d-flex">
+            <form class="w-100 text-white fw-bold">
+                <label class="form-label">Название</label>
+                <input type="text" class="form-control w-75"/>
+                <label class="form-label">Группа</label>
+                <input type="text" class="form-control w-75"/>
+                <label class="form-label">Имя</label>
+                <input type="text" class="form-control w-75"/>
+                <button type="submit" class="mt-5 w-75 p-2 fs-5  text-white rounded-pill border border-0">Отправить</button>
+            </form>
+            <img class="w-50 h-50" src="https://sun9-87.userapi.com/s/v1/ig2/ge7A1s8RtdvrXmWRg5CSuWkfrluTsgDh1JttkNF9ntxne7iDieZVHH5skjriVVexYmPxBIFUof3-2xfdmlVcUJ-U.jpg?size=800x600&quality=96&type=album">
+        </div>
+    </div>
+    <footer>
+        {{ template "footer"}}
+    </footer>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
+    <script src="../../assets/script/bootstrap.js">
+    </script>
+</head>
+<body>
+    {{ template "header"}}
+    <h1 class="display-3 text-center mt-2 mb-4">Вся музыка прямо тут!</h1>
+    {{ range $k,$v := .clients}}
+        <div class="row me-5 ms-5 mb-3">
+            <p class="col-sm fs-2 ">{{$v}}</p>
+            <audio controls class="col-sm w-100" >
+                <source src="assets/files/{{$v}}.mp3" type="audio/mpeg"/>
+            </audio>
+        </div>
+    {{end}}
+    <div class="playlist">
+        <h1 class="text-white fw-bold text-center display-2">Наши плейлисты!</h1>
+        <div class="row text-center">
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="w-100"><br></div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+            <div class="col">
+                <img src="https://sun9-36.userapi.com/s/v1/ig2/aajAQ_jlzFCiwlmEbZvtKMuRW1oD4ZIIW8GBtNsheLaNOn8KOgmZQ1wJZHh09GUbXLXl0ln1WOEvHh992QBg9qvt.jpg?size=1024x765&quality=95&type=album">
+            </div>
+        </div><br>
+    </div>
+    {{ template "footer"}}
+</body>
+</html>

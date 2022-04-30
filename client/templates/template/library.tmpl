@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
+    <script src="../../assets/script/bootstrap.js"></script>
+</head>
+<body>
+    {{ template "header"}}
+    <div class="container">
+        <h1 class="display-2"><a class="text-decoration-none text-black" href="/playlist_library">Мои плейлисты</a></h1>
+        <hr>
+        <div class="playlist_box row">
+            <div class="col text-center">
+                <a href="/" class="fs-5 text-decoration-none text-dark ">
+                    <img src="https://sun9-28.userapi.com/s/v1/ig2/CEb2y5ntnN4zrOGUzcu2y-bd_2PORtS3Omq0f4sTGI8du4mBt2ObHCbqQ6ZffsaSTiKMNVRCS3u4Vd-1Uj97PlRu.jpg?size=1080x1080&quality=96&type=album">
+                    Анархист
+                </a>
+            </div>
+            <div class="col">
+                <p class="fs-5 text-center">
+                    <img src="https://sun9-28.userapi.com/s/v1/ig2/CEb2y5ntnN4zrOGUzcu2y-bd_2PORtS3Omq0f4sTGI8du4mBt2ObHCbqQ6ZffsaSTiKMNVRCS3u4Vd-1Uj97PlRu.jpg?size=1080x1080&quality=96&type=album">
+                    Анархист
+                </p>            </div>
+            <div class="col">
+                <p class="fs-5 text-center">
+                    <img src="https://sun9-28.userapi.com/s/v1/ig2/CEb2y5ntnN4zrOGUzcu2y-bd_2PORtS3Omq0f4sTGI8du4mBt2ObHCbqQ6ZffsaSTiKMNVRCS3u4Vd-1Uj97PlRu.jpg?size=1080x1080&quality=96&type=album">
+                    Анархист
+                </p>            </div>
+            <div class="col">
+                <p class="fs-5 text-center">
+                    <img src="https://sun9-28.userapi.com/s/v1/ig2/CEb2y5ntnN4zrOGUzcu2y-bd_2PORtS3Omq0f4sTGI8du4mBt2ObHCbqQ6ZffsaSTiKMNVRCS3u4Vd-1Uj97PlRu.jpg?size=1080x1080&quality=96&type=album">
+                    Анархист
+                </p>            </div>
+            <div class="col">
+                <p class="fs-5 text-center">
+                    <img src="https://sun9-28.userapi.com/s/v1/ig2/CEb2y5ntnN4zrOGUzcu2y-bd_2PORtS3Omq0f4sTGI8du4mBt2ObHCbqQ6ZffsaSTiKMNVRCS3u4Vd-1Uj97PlRu.jpg?size=1080x1080&quality=96&type=album">
+                    Анархист
+                </p>            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="display-2 m-3">Мои треки</h1>
+        <hr class="w-75">
+        {{ range $k,$v := .clients}}
+            <div class="row me-5 ms-5 mb-3">
+                <p class="col-sm fs-2 ">{{$v}}</p>
+                <audio controls class="col-sm w-100" >
+                    <source src="assets/files/{{$v}}.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+        {{end}}
+    </div>
+
+    {{ template "footer"}}
+</body>
+</html>

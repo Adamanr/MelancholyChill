@@ -1,9 +1,13 @@
-
+/*****************Глобальные настройки************/
 *{
     margin:0px;
     padding: 0px;
 }
+input[type=checkbox] {
+    transform: scale(2);
+}
 
+/**************Шапка на основной странице************/
 .headers{
     height: 50vh;
     width: 100%;
@@ -11,9 +15,6 @@
     background-repeat: no-repeat;
 }
 
-body{
-
-}
 .info img{
     height:40vh;
     width: 100%;
@@ -49,4 +50,87 @@ body{
     width:2em;
     height: 2em;
     background-color: black;
+}
+
+/**********Страница авторизации********/
+.authBody{
+    background-image: url("../img/authBack.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*Расположение формы авторизации*/
+.authBox {
+    width: 30%;
+    margin-top: 12%;
+    height:55vh;
+    font-weight: bold;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+}
+.authBox button {
+}
+
+
+/****Страница личного профиля****/
+
+.marketing {
+    background-image: url("https://sun9-88.userapi.com/s/v1/ig2/9UCukGnukCXKUiYst7_PccHrRqSfx7jFURcBS2QwxPjpHESLyGTeaZHa3P3t5cD9QbQDRzYuQ1oOIjaNORsXiXdK.jpg?size=1026x1026&quality=96&type=album");
+    background-size: 100%;
+    border:5px solid black;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.regPage{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+#upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    outline: 2px dashed #5d5d5d;
+    outline-offset: -12px;
+    background-color: #e0f2f7;
+    font-family: 'Segoe UI';
+    color: #1f3c44;
+}
+
+#upload-container img {
+    width: 70%;
+    margin-bottom: 20px;
+    user-select: none;
+}
+#upload-container label {
+    font-weight: bold;
+}
+
+#upload-container label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#upload-container div {
+     position: relative;
+     z-index: 10;
+ }
+
+#upload-container input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+#upload-container input[type=file]:focus + label {
+    outline: -webkit-focus-ring-color auto 5px;
 }

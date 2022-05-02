@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
+    <script src="../../assets/script/bootstrap.js">
+    </script>
+</head>
+<body>
+{{ template "header"}}
+    <div class="profile">
+        <div class="container m-5 d-flex">
+            <img class="w-25 h-25" src="https://sun1.is74.userapi.com/s/v1/ig2/9sp5zgd24RwIJgOi0fyPDAA2Ox-qNgBhJKdzZaLHcDu1iDk-K2q7EfZSmWjEuz4UJwM3O1tmQzY63ZX3IDH0AKVA.jpg?size=1053x950&quality=95&type=album">
+            <div>
+                <ul class="ms-5 fs-2 list-group list-group-flush">
+                    <li class="list-group-item">Имя: </li>
+                    <li class="list-group-item">Число треков в библиотеке: 100 </li>
+                    <li class="list-group-item">Дата регистрации:  </li>
+                    <li class="list-group-item">Любимый исполнитель:  </li>
+                    <li class="list-group-item">Любимый альбом:  </li>
+                </ul>
+            </div>
+            <div class=" marketing align-text-bottom container w-25 ">
+                <p class="fw-bold bg-white">Здесь могла бы быть ваша реклама</p>
+            </div>
+        </div>
+    </div>
+{{ template "footer"}}
+</body>
+</html>

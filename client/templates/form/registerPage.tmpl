@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
+    <script src="../../assets/script/bootstrap.js">
+    </script>
+</head>
+<body class="regPage">
+    <div class=" container w-50 bg-white">
+        <h1 class="display-4">Авторизация</h1>
+        <div class="d-flex">
+            <form action="/register-answer" method="post" class="me-5">
+                <div class="mb-2 row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Имя</label><br>
+                    <input type="text" class="form-control" name="name" id="staticEmail" >
+
+                </div>
+                <div class="mb-2 row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Логин</label>
+                    <input type="text" class="form-control" name="login" id="staticEmail" >
+
+                </div>
+                <div class="mb-2 row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Логин</label>
+                    <input type="text" class="form-control" name="password" id="staticEmail" >
+                </div>
+                <div class="container border-1 border-black">
+                    <a class="text-decoration-none text-dark" href="/auth-page">Авторизация</a>
+                </div>
+                <p class="text-danger mb-2 fs-5">{{ .checkAuth}}</p>
+                <button type="submit" class="btn btn-success rounded ms-4 pe-5 ps-5">Зарегистрироваться</button>
+            </form>
+            <form id="upload-container" method="POST"  >
+                <img id="upload-image" src="assets/img/upload.png" style="width: 5em;">
+                <div class="text-center">
+                    <input id="file-input" type="file" name="file" multiple>
+                    <label class="fs-5"for="file-input">Выберите файл</label>
+                    <span>или перетащите его сюда</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <h1>MelancholyChill</h1>
 
-<b>Ru:</b>Веб-сайт для создания собственных плейлистов и добавления и прослушивания музыки на сайте [*В будущем*]
+<b>Ru:</b>Веб-сайт для создания собственных плейлистов и добавления и прослушивания музыки на сайте [*В будущем*]<br>
 <b>En:</b> A website for creating your own playlists and adding and listening to music on the site [*In the future*]<br>
 
 *Главная страница*

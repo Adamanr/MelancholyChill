@@ -4,7 +4,7 @@
 <b>En:</b> A website for creating your own playlists and adding and listening to music on the site [*In the future*]<br>
 
 *Главная страница*
-<img width="680" height="480" src="https://user-images.githubusercontent.com/45318496/166193439-3fbbce23-c120-4a46-9d0d-d4bff1c71c76.png">
+<img width="680" height="880" src="https://user-images.githubusercontent.com/45318496/166193439-3fbbce23-c120-4a46-9d0d-d4bff1c71c76.png">
 
 *Плейлисты*
 <img width="680" height="480" src="https://user-images.githubusercontent.com/45318496/166193563-92de8c05-1d1f-45b3-afec-c7a918ca76bc.png">
